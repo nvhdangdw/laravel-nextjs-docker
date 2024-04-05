@@ -18,3 +18,5 @@ Route::get('/', function () {
 });
 
 require __DIR__.'/auth.php';
+
+Route::get('/fetch-lazada-data', [ProductController::class, 'fetchDataFromLazadaAPI']);
